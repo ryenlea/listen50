@@ -16,6 +16,13 @@
 		3C8D8F651785B00C005CC366 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F641785B00C005CC366 /* Default.png */; };
 		3C8D8F671785B00C005CC366 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F661785B00C005CC366 /* Default@2x.png */; };
 		3C8D8F691785B00C005CC366 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F681785B00C005CC366 /* Default-568h@2x.png */; };
+		3C8D8F751785C5E9005CC366 /* main.nss in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F741785C5E9005CC366 /* main.nss */; };
+		3C8D8F781785C6BB005CC366 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8F771785C6BB005CC366 /* DetailViewController.m */; };
+		3C8D8F7B1785C6DC005CC366 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */; };
+		3C8D8F7E1785C7E7005CC366 /* lessons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F7D1785C7E7005CC366 /* lessons.plist */; };
+		3C8D8FB61785EB2D005CC366 /* LessonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8FB51785EB2D005CC366 /* LessonCell.xib */; };
+		3C8D8FBA1785EBD7005CC366 /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8FB91785EBD7005CC366 /* LessonCell.m */; };
+		3C8D8FBE1785ED52005CC366 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8FBD1785ED52005CC366 /* Lesson.m */; };
 		F4EB7DDF80E44C8984519D09 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B46CBF0A8F441499554D41 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +41,18 @@
 		3C8D8F641785B00C005CC366 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3C8D8F661785B00C005CC366 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3C8D8F681785B00C005CC366 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C8D8F711785C4C7005CC366 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3C8D8F741785C5E9005CC366 /* main.nss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nss; sourceTree = "<group>"; };
+		3C8D8F761785C6BB005CC366 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3C8D8F771785C6BB005CC366 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3C8D8F791785C6DC005CC366 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		3C8D8F7D1785C7E7005CC366 /* lessons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lessons.plist; sourceTree = "<group>"; };
+		3C8D8FB51785EB2D005CC366 /* LessonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LessonCell.xib; sourceTree = "<group>"; };
+		3C8D8FB81785EBD7005CC366 /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCell.h; sourceTree = "<group>"; };
+		3C8D8FB91785EBD7005CC366 /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCell.m; sourceTree = "<group>"; };
+		3C8D8FBC1785ED52005CC366 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
+		3C8D8FBD1785ED52005CC366 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
 		58B46CBF0A8F441499554D41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3C8D8F581785B00C005CC366 /* listen50 */,
+				3C8D8F721785C575005CC366 /* Asserts */,
 				3C8D8F6F1785C24C005CC366 /* Libs */,
 				3C8D8F511785B00C005CC366 /* Frameworks */,
 				3C8D8F501785B00C005CC366 /* Products */,
@@ -85,6 +105,9 @@
 		3C8D8F581785B00C005CC366 /* listen50 */ = {
 			isa = PBXGroup;
 			children = (
+				3C8D8FBB1785ED2D005CC366 /* Models */,
+				3C8D8FB41785EB06005CC366 /* Views */,
+				3C8D8F701785C3C9005CC366 /* ViewControllers */,
 				3C8D8F611785B00C005CC366 /* AppDelegate.h */,
 				3C8D8F621785B00C005CC366 /* AppDelegate.m */,
 				3C8D8F591785B00C005CC366 /* Supporting Files */,
@@ -102,6 +125,7 @@
 				3C8D8F641785B00C005CC366 /* Default.png */,
 				3C8D8F661785B00C005CC366 /* Default@2x.png */,
 				3C8D8F681785B00C005CC366 /* Default-568h@2x.png */,
+				3C8D8F711785C4C7005CC366 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +136,62 @@
 			);
 			name = Libs;
 			path = listen50;
+			sourceTree = "<group>";
+		};
+		3C8D8F701785C3C9005CC366 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8F761785C6BB005CC366 /* DetailViewController.h */,
+				3C8D8F771785C6BB005CC366 /* DetailViewController.m */,
+				3C8D8F791785C6DC005CC366 /* MasterViewController.h */,
+				3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C8D8F721785C575005CC366 /* Asserts */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8F7C1785C7BB005CC366 /* Data */,
+				3C8D8F731785C57E005CC366 /* Styles */,
+			);
+			name = Asserts;
+			path = listen50;
+			sourceTree = "<group>";
+		};
+		3C8D8F731785C57E005CC366 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8F741785C5E9005CC366 /* main.nss */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		3C8D8F7C1785C7BB005CC366 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8F7D1785C7E7005CC366 /* lessons.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		3C8D8FB41785EB06005CC366 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8FB51785EB2D005CC366 /* LessonCell.xib */,
+				3C8D8FB81785EBD7005CC366 /* LessonCell.h */,
+				3C8D8FB91785EBD7005CC366 /* LessonCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3C8D8FBB1785ED2D005CC366 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C8D8FBC1785ED52005CC366 /* Lesson.h */,
+				3C8D8FBD1785ED52005CC366 /* Lesson.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +251,9 @@
 				3C8D8F651785B00C005CC366 /* Default.png in Resources */,
 				3C8D8F671785B00C005CC366 /* Default@2x.png in Resources */,
 				3C8D8F691785B00C005CC366 /* Default-568h@2x.png in Resources */,
+				3C8D8F751785C5E9005CC366 /* main.nss in Resources */,
+				3C8D8F7E1785C7E7005CC366 /* lessons.plist in Resources */,
+				3C8D8FB61785EB2D005CC366 /* LessonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +297,10 @@
 			files = (
 				3C8D8F5F1785B00C005CC366 /* main.m in Sources */,
 				3C8D8F631785B00C005CC366 /* AppDelegate.m in Sources */,
+				3C8D8F781785C6BB005CC366 /* DetailViewController.m in Sources */,
+				3C8D8F7B1785C6DC005CC366 /* MasterViewController.m in Sources */,
+				3C8D8FBA1785EBD7005CC366 /* LessonCell.m in Sources */,
+				3C8D8FBE1785ED52005CC366 /* Lesson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

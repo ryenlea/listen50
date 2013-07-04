@@ -1,0 +1,19 @@
+PODS:
+  - AFNetworking (1.3.1)
+  - NoticeView (3.0.6)
+  - NUI (0.3.0)
+  - Underscore.m (0.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.0)
+  - NoticeView (~> 3.0)
+  - NUI
+  - Underscore.m (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  NoticeView: 16bb529beb669dd8f27f1dc9c63b8d006cf89ad1
+  NUI: 030801aedc2fcd321efe50db8d44a36379955e7a
+  Underscore.m: a1363c047e21e601dcabc16abd6faf9413cf4290
+
+COCOAPODS: 0.18.1

@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "LessonCell.h"
+#import "NUIRenderer.h"
 
 @interface MasterViewController ()
 
@@ -30,6 +31,14 @@
     [super viewDidLoad];
     self.tableView.delegate  = self;
     self.tableView.dataSource  = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    UINavigationController* nav = self.navigationController;
+    nav.toolbarHidden = NO;
+    [NUIToolbarRenderer render:nav.toolbar withClass:@"QANavigationBar"];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,7 +69,9 @@
     }
     
     LessonCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL];
-    
+    UIView* bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
+    cell.selectedBackgroundView= bgColorView;
     NSUInteger row = indexPath.row;
     return cell;
 }

@@ -2,28 +2,28 @@
 @primaryFontNameBold: Helvetica-Bold;
 @primaryFontColor: #3E3D43;
 @secondaryFontColor: #838385;
-@primaryBackgroundColor: #F5F5F5;
+@primaryBackgroundColor: #E6E6E6;
 @primaryBackgroundTintColor: #ECECEC;
-@primaryBackgroundColorTop: #FFFFFF;
-@primaryBackgroundColorBottom: #EFF0F2;
+@primaryBackgroundColorTop: #F4EFEB;
+@primaryBackgroundColorBottom: #EAE6E2;
 @secondaryBackgroundColorTop: #FCFCFC;
 @secondaryBackgroundColorBottom: #F9F9F9;
-@primaryBorderColor: #DDDDDD;
+@primaryBorderColor: #DDD7D2;
 @primaryBorderWidth: 1;
 
 BarButton {
-    background-color-top: #11ABE1;
-    background-color-bottom: #01A0DA;
-    border-color: #0099D5;
+    background-color-top: #9D3024;
+    background-color-bottom: #872A1F;
+    border-color: #681C13;
     border-width: 1;
     corner-radius: 7;
     font-name: @primaryFontNameBold;
     font-color: #FFFFFF;
-    font-size: 13;
+    font-size: 15;
     text-shadow-color: clear;
 }
 Button {
-    background-color: #37383D;
+    background-color: #B43B2E;
     font-color: #FFFFFF;
     font-color-highlighted: #CCCCCC;
     font-name: @primaryFontNameBold;
@@ -33,7 +33,7 @@ Button {
     padding: 12;
 }
 LargeButton {
-    background-color: #00ADEF;
+    background-color: #B43B2E;
     height: 50;
     font-size: 24;
     corner-radius: 25;
@@ -63,7 +63,8 @@ SmallLabel {
     font-color: #8F8F91;
 }
 NavigationBar {
-    background-color: #00ADEF;
+    background-color-top: #B43B2E;
+    background-color-bottom: #9E3126;
     font-name: @primaryFontNameBold;
     font-size: 22;
     font-color: #FFFFFF;
@@ -133,7 +134,7 @@ View {
 
 QASegmentedControl {
     background-color: #BBBBBB;
-    background-color-selected: #00ADEF;
+    background-color-selected: #B43B2E;
     border-width: 2;
     border-color: @primaryBorderColor;
     corner-radius: 10;
@@ -143,7 +144,7 @@ QASegmentedControl {
     text-shadow-color: clear;
 }
 QANavigationBar {
-    background-color: #00ADEF;
+    background-color: #B43B2E;
     font-name: @primaryFontNameBold;
     font-size: 22;
     font-color: #FFFFFF;

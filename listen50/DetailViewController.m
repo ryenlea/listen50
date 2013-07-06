@@ -21,6 +21,7 @@
     if(self){
         webView = [[UIWebView alloc] initWithFrame: [UIScreen mainScreen].applicationFrame];
         webView.delegate =self;
+        webView.scrollView.bounces = NO;
         self.view = webView;
         
     }

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController<UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController<UISplitViewControllerDelegate,UIWebViewDelegate>
+
+@property (nonatomic,strong) UIWebView* webView;
+@property (nonatomic,strong) UINavigationController* navCtr;
+-(void) displayQuestionPage: (NSInteger) lessonNo;
+-(void) displayAnswerPage: (NSInteger) lessonNo;
 
 @end

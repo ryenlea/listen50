@@ -22,7 +22,8 @@
     MasterViewController* masterCtr = [[MasterViewController alloc] init];
     DetailViewController* detailCtr = [[DetailViewController alloc] init];
     UINavigationController* masterNavCtr = [[UINavigationController alloc] initWithRootViewController:masterCtr];
-    UINavigationController* detailNavCtr = [[UINavigationController alloc] initWithRootViewController:detailCtr];;
+    UINavigationController* detailNavCtr = [[UINavigationController alloc] initWithRootViewController:detailCtr];
+    
     self.window.rootViewController = splitViewController;
     masterCtr.detailCtr = detailCtr;
     

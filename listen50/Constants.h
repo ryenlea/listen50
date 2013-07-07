@@ -6,5 +6,5 @@
 //  Copyright (c) 2013年 Li Yuhang. All rights reserved.
 //
 
-#define APP ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#define APP (AppDelegate*)[[UIApplication sharedApplication] delegate]
 

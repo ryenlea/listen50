@@ -11,6 +11,8 @@
 #import "SettingsViewController.h"
 #import "LessonCell.h"
 #import "NUIRenderer.h"
+#import "AppDelegate.h"
+#import "UIBarButtonItem+NUI.h"
 
 @interface MasterViewController ()
 
@@ -43,13 +45,16 @@
     UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStyleBordered target:self action:@selector(popSettingsPage:)];
     //
     UIBarButtonItem *fixedButton  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target: nil action: nil];
+    [NUIBarButtonItemRenderer render:item withClass:@"BarButton"];
     self.toolbarItems = @[fixedButton, item];
 
 }
 
 - (void) popSettingsPage:(id)sender
 {
-    [self presentModalViewController:[[SettingsViewController alloc] init] animated:YES];
+    UINavigationController* settingNav = [[UINavigationController alloc] initWithRootViewController:[[SettingsViewController alloc] init]];
+    settingNav.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentModalViewController:settingNav animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

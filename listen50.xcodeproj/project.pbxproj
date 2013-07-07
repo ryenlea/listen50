@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1768C2178962FF0095E909 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1768C1178962FF0095E909 /* SettingsViewController.m */; };
 		3C8D8F531785B00C005CC366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F521785B00C005CC366 /* UIKit.framework */; };
 		3C8D8F551785B00C005CC366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F541785B00C005CC366 /* Foundation.framework */; };
 		3C8D8F571785B00C005CC366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F561785B00C005CC366 /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		15B9D38594584462B547E47C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3C1768C0178962FF0095E909 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3C1768C1178962FF0095E909 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		3C8D8F4F1785B00C005CC366 /* listen50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listen50.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8D8F521785B00C005CC366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C8D8F541785B00C005CC366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				3C8D8F771785C6BB005CC366 /* DetailViewController.m */,
 				3C8D8F791785C6DC005CC366 /* MasterViewController.h */,
 				3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */,
+				3C1768C0178962FF0095E909 /* SettingsViewController.h */,
+				3C1768C1178962FF0095E909 /* SettingsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				3C8D8F7B1785C6DC005CC366 /* MasterViewController.m in Sources */,
 				3C8D8FBA1785EBD7005CC366 /* LessonCell.m in Sources */,
 				3C8D8FBE1785ED52005CC366 /* Lesson.m in Sources */,
+				3C1768C2178962FF0095E909 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

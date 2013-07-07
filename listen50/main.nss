@@ -66,7 +66,7 @@ NavigationBar {
     background-color-top: #B43B2E;
     background-color-bottom: #9E3126;
     font-name: @primaryFontNameBold;
-    font-size: 22;
+    font-size: 21;
     font-color: #FFFFFF;
     text-shadow-color: clear;
 }

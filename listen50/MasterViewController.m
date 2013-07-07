@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "SettingsViewController.h"
 #import "LessonCell.h"
 #import "NUIRenderer.h"
 
@@ -38,7 +39,17 @@
     UINavigationController* nav = self.navigationController;
     nav.toolbarHidden = NO;
     [NUIToolbarRenderer render:nav.toolbar withClass:@"QANavigationBar"];
+    //
+    UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStyleBordered target:self action:@selector(popSettingsPage:)];
+    //
+    UIBarButtonItem *fixedButton  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target: nil action: nil];
+    self.toolbarItems = @[fixedButton, item];
 
+}
+
+- (void) popSettingsPage:(id)sender
+{
+    [self presentModalViewController:[[SettingsViewController alloc] init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,7 +83,6 @@
     UIView* bgColorView = [[UIView alloc] init];
     bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
     cell.selectedBackgroundView= bgColorView;
-    NSUInteger row = indexPath.row;
     return cell;
 }
 

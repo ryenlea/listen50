@@ -67,10 +67,7 @@
     [webView loadRequest: [NSURLRequest requestWithURL: [NSURL URLWithString:@"http://www.ruby-china.org"]]];
 }
 
-- (void) popSettingPage
-{
-    
-}
+
 
 #pragma mark split view
 -(void) splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc

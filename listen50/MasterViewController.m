@@ -68,6 +68,7 @@
 - (void) displayLesson:(NSInteger)lessonId
 {
     detailCtr.contentType = CONTENT_QUESTION;
+    detailCtr.lessonId = lessonId;
     [detailCtr displayContent:lessonId withPageType:CONTENT_QUESTION];
     NSString* str = lessons[lessonId-1][@"title"];
     detailCtr.navigationItem.title  = str;

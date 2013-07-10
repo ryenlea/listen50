@@ -14,7 +14,7 @@
 @end
 
 @implementation DetailViewController
-@synthesize webView,masterPopoverCtr,navCtr,contentType;
+@synthesize webView,masterPopoverCtr,navCtr,contentType,lessonId;
 
 - (id)init{
     self = [super init];
@@ -37,7 +37,7 @@
     [sc setWidth:100.0 forSegmentAtIndex:1];
     sc.nuiClass = @"QASegmentedControl";
     sc.selectedSegmentIndex = CONTENT_QUESTION == contentType ? 0 : 1;
-    [sc addTarget:self action:@selector(displayContent:withPageType:) forControlEvents:UIControlEventValueChanged];
+    [sc addTarget:self action:@selector(segmentedControlChanged:) forControlEvents:UIControlEventValueChanged];
     //
     UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithCustomView:sc];
     //
@@ -65,6 +65,18 @@
     NSString* htmlPath = [[NSBundle mainBundle] pathForResource: fileName ofType:@"html" inDirectory:@"assets/htmls"];
     NSURL* htmlUrl = [NSURL fileURLWithPath:htmlPath];
     [webView loadRequest: [NSURLRequest requestWithURL:htmlUrl]];
+}
+#pragma mark custom
+- (void) segmentedControlChanged:(id)sender
+{
+    switch ([sender selectedSegmentIndex]) {
+        case 1:
+            [self displayContent:lessonId withPageType:CONTENT_TEXT];
+            break;
+        case 0:
+        default:
+            [self displayContent:lessonId withPageType:CONTENT_QUESTION];
+    }
 }
 
 #pragma mark split view

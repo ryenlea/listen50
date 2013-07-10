@@ -26,6 +26,8 @@
     if(self){
         self.navigationItem.title = @"目录";
     }
+    NSString* filepath = [[NSBundle mainBundle] pathForResource:@"lessons" ofType:@"plist"];
+    lessons = [[NSArray alloc] initWithContentsOfFile:filepath];
     return self;
 }
 
@@ -89,7 +91,7 @@
     UIView* bgColorView = [[UIView alloc] init];
     bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
     cell.selectedBackgroundView= bgColorView;
-    
+    cell.lessonTitle.text = lessons[indexPath.row][@"title"];
     /*
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL];
     if(cell == NULL){

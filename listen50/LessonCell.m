@@ -9,6 +9,7 @@
 #import "LessonCell.h"
 
 @implementation LessonCell
+@synthesize lessonTitle;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

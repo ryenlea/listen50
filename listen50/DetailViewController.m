@@ -59,7 +59,10 @@
 
 - (void) displayQuestionPage:(NSInteger)lessonNo
 {
-    [webView loadRequest: [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.airad.com"]]];
+    NSString* fileName = [NSString stringWithFormat:@"%dq",lessonNo];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource: fileName ofType:@"html" inDirectory:@"assets/htmls"];
+    NSURL* htmlUrl = [NSURL fileURLWithPath:htmlPath];
+    [webView loadRequest: [NSURLRequest requestWithURL:htmlUrl]];
 }
 
 - (void) displayAnswerPage:(NSInteger)lessonNo

@@ -113,6 +113,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [detailCtr displayQuestionPage: indexPath.row + 1];
-    detailCtr.navigationItem.title  = [NSString stringWithFormat:@"%d", indexPath.row ];
+    NSString* str = lessons[indexPath.row][@"title"];
+    detailCtr.navigationItem.title  = str;
 }
 @end

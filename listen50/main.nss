@@ -150,3 +150,9 @@ QANavigationBar {
     font-color: #FFFFFF;
     text-shadow-color: clear;
 }
+SettingsTableCell {
+    background-color: #F7F7F7;
+    font-color: @primaryFontColor;
+    font-name: @primaryFontNameBold;
+    font-size: 17;
+}

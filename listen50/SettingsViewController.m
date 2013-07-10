@@ -50,7 +50,7 @@
             UIView* bgColorView = [[UIView alloc] init];
             bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
             cell.selectedBackgroundView= bgColorView;
-            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		} whenSelected:^(NSIndexPath *indexPath) {
 			//TODO
 		}];

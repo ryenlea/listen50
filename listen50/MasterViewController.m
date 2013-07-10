@@ -77,6 +77,7 @@
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString* CELL = @"Cell";
+    
     static BOOL nibsRegistered =NO;
     if(!nibsRegistered){
         UINib* nib = [UINib nibWithNibName:@"LessonCell" bundle:nil];
@@ -88,16 +89,25 @@
     UIView* bgColorView = [[UIView alloc] init];
     bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
     cell.selectedBackgroundView= bgColorView;
+    
+    /*
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL];
+    if(cell == NULL){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL];
+    }
+    UIView* bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
+    cell.selectedBackgroundView= bgColorView;
+    cell.textLabel.text = @"もしもし";
+    */
     return cell;
 }
 
 #pragma mark delegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75.0;
+    return 65.0;
 }
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [detailCtr displayQuestionPage: indexPath.row + 1];

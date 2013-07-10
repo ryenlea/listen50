@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C1768C2178962FF0095E909 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1768C1178962FF0095E909 /* SettingsViewController.m */; };
+		3C3C26D1178D22A0002BEBB8 /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3C26CF178D22A0002BEBB8 /* LessonCell.m */; };
+		3C3C26D2178D22A0002BEBB8 /* LessonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3C26D0178D22A0002BEBB8 /* LessonCell.xib */; };
 		3C8D8F531785B00C005CC366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F521785B00C005CC366 /* UIKit.framework */; };
 		3C8D8F551785B00C005CC366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F541785B00C005CC366 /* Foundation.framework */; };
 		3C8D8F571785B00C005CC366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F561785B00C005CC366 /* CoreGraphics.framework */; };
@@ -21,8 +23,6 @@
 		3C8D8F781785C6BB005CC366 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8F771785C6BB005CC366 /* DetailViewController.m */; };
 		3C8D8F7B1785C6DC005CC366 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */; };
 		3C8D8F7E1785C7E7005CC366 /* lessons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8F7D1785C7E7005CC366 /* lessons.plist */; };
-		3C8D8FB61785EB2D005CC366 /* LessonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8D8FB51785EB2D005CC366 /* LessonCell.xib */; };
-		3C8D8FBA1785EBD7005CC366 /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8FB91785EBD7005CC366 /* LessonCell.m */; };
 		3C8D8FBE1785ED52005CC366 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D8FBD1785ED52005CC366 /* Lesson.m */; };
 		F4EB7DDF80E44C8984519D09 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B46CBF0A8F441499554D41 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -31,6 +31,9 @@
 		15B9D38594584462B547E47C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		3C1768C0178962FF0095E909 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		3C1768C1178962FF0095E909 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3C3C26CE178D22A0002BEBB8 /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCell.h; sourceTree = "<group>"; };
+		3C3C26CF178D22A0002BEBB8 /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCell.m; sourceTree = "<group>"; };
+		3C3C26D0178D22A0002BEBB8 /* LessonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LessonCell.xib; sourceTree = "<group>"; };
 		3C8D8F4F1785B00C005CC366 /* listen50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listen50.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8D8F521785B00C005CC366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C8D8F541785B00C005CC366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,9 +54,6 @@
 		3C8D8F791785C6DC005CC366 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		3C8D8F7A1785C6DC005CC366 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		3C8D8F7D1785C7E7005CC366 /* lessons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lessons.plist; sourceTree = "<group>"; };
-		3C8D8FB51785EB2D005CC366 /* LessonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LessonCell.xib; sourceTree = "<group>"; };
-		3C8D8FB81785EBD7005CC366 /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCell.h; sourceTree = "<group>"; };
-		3C8D8FB91785EBD7005CC366 /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCell.m; sourceTree = "<group>"; };
 		3C8D8FBC1785ED52005CC366 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson.h; sourceTree = "<group>"; };
 		3C8D8FBD1785ED52005CC366 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson.m; sourceTree = "<group>"; };
 		58B46CBF0A8F441499554D41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,9 +186,9 @@
 		3C8D8FB41785EB06005CC366 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3C8D8FB51785EB2D005CC366 /* LessonCell.xib */,
-				3C8D8FB81785EBD7005CC366 /* LessonCell.h */,
-				3C8D8FB91785EBD7005CC366 /* LessonCell.m */,
+				3C3C26CE178D22A0002BEBB8 /* LessonCell.h */,
+				3C3C26CF178D22A0002BEBB8 /* LessonCell.m */,
+				3C3C26D0178D22A0002BEBB8 /* LessonCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				3C8D8F691785B00C005CC366 /* Default-568h@2x.png in Resources */,
 				3C8D8F751785C5E9005CC366 /* main.nss in Resources */,
 				3C8D8F7E1785C7E7005CC366 /* lessons.plist in Resources */,
-				3C8D8FB61785EB2D005CC366 /* LessonCell.xib in Resources */,
+				3C3C26D2178D22A0002BEBB8 /* LessonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +328,9 @@
 				3C8D8F631785B00C005CC366 /* AppDelegate.m in Sources */,
 				3C8D8F781785C6BB005CC366 /* DetailViewController.m in Sources */,
 				3C8D8F7B1785C6DC005CC366 /* MasterViewController.m in Sources */,
-				3C8D8FBA1785EBD7005CC366 /* LessonCell.m in Sources */,
 				3C8D8FBE1785ED52005CC366 /* Lesson.m in Sources */,
 				3C1768C2178962FF0095E909 /* SettingsViewController.m in Sources */,
+				3C3C26D1178D22A0002BEBB8 /* LessonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

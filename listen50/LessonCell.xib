@@ -42,16 +42,17 @@
 							<object class="IBUILabel" id="946853543">
 								<reference key="NSNextResponder" ref="551262827"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{114, 25}, {42, 21}}</string>
+								<string key="NSFrame">{{30, 15}, {293, 32}}</string>
 								<reference key="NSSuperview" ref="551262827"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">Label</string>
+								<string key="IBUIText">もしもし</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -74,9 +75,10 @@
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 						</array>
-						<string key="NSFrameSize">{352, 72}</string>
+						<string key="NSFrameSize">{352, 61}</string>
 						<reference key="NSSuperview" ref="137747355"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="946853543"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -89,14 +91,14 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{352, 73}</string>
+				<string key="NSFrameSize">{352, 62}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="551262827"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 				<reference key="IBUIContentView" ref="551262827"/>
-				<real value="73" key="IBUIRowHeight"/>
+				<real value="65" key="IBUIRowHeight"/>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">

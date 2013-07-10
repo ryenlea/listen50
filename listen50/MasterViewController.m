@@ -65,6 +65,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) displayLesson:(NSInteger)lessonId
+{
+    detailCtr.contentType = CONTENT_QUESTION;
+    [detailCtr displayContent:lessonId withPageType:CONTENT_QUESTION];
+    NSString* str = lessons[lessonId-1][@"title"];
+    detailCtr.navigationItem.title  = str;
+}
+
 #pragma mark datasource
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -112,8 +120,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [detailCtr displayQuestionPage: indexPath.row + 1];
-    NSString* str = lessons[indexPath.row][@"title"];
-    detailCtr.navigationItem.title  = str;
+    [self displayLesson: indexPath.row+1];
 }
 @end

@@ -14,7 +14,7 @@
 @end
 
 @implementation DetailViewController
-@synthesize webView,masterPopoverCtr,navCtr;
+@synthesize webView,masterPopoverCtr,navCtr,contentType;
 
 - (id)init{
     self = [super init];
@@ -23,7 +23,7 @@
         webView.delegate =self;
         webView.scrollView.bounces = NO;
         self.view = webView;
-        
+        contentType = CONTENT_QUESTION;
     }
     return self;
 }
@@ -36,19 +36,20 @@
     [sc setWidth:100.0 forSegmentAtIndex:0];
     [sc setWidth:100.0 forSegmentAtIndex:1];
     sc.nuiClass = @"QASegmentedControl";
+    sc.selectedSegmentIndex = CONTENT_QUESTION == contentType ? 0 : 1;
+    [sc addTarget:self action:@selector(displayContent:withPageType:) forControlEvents:UIControlEventValueChanged];
     //
     UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithCustomView:sc];
     //
     [NUIToolbarRenderer render:nav.toolbar withClass:@"QANavigationBar"];
     UIBarButtonItem *fixedButton  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target: nil action: nil];
     self.toolbarItems = @[fixedButton, item, fixedButton];
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [webView loadRequest: [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.yyets.com" ] ]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,20 +58,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) displayQuestionPage:(NSInteger)lessonNo
+- (void) displayContent:(NSInteger)lessonNo withPageType:(NSInteger)conType
 {
-    NSString* fileName = [NSString stringWithFormat:@"%dq",lessonNo];
+    contentType = conType;
+    NSString* fileName =  [NSString stringWithFormat: CONTENT_QUESTION == contentType ? @"%dq" : @"%da",lessonNo];
     NSString* htmlPath = [[NSBundle mainBundle] pathForResource: fileName ofType:@"html" inDirectory:@"assets/htmls"];
     NSURL* htmlUrl = [NSURL fileURLWithPath:htmlPath];
     [webView loadRequest: [NSURLRequest requestWithURL:htmlUrl]];
 }
-
-- (void) displayAnswerPage:(NSInteger)lessonNo
-{
-    [webView loadRequest: [NSURLRequest requestWithURL: [NSURL URLWithString:@"http://www.ruby-china.org"]]];
-}
-
-
 
 #pragma mark split view
 -(void) splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc

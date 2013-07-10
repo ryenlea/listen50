@@ -13,4 +13,6 @@
 
 @property (strong,nonatomic) DetailViewController* detailCtr;
 @property (strong,nonatomic) NSArray* lessons;
+
+- (void) displayLesson:(NSInteger) lessonId;
 @end

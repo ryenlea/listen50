@@ -8,3 +8,7 @@
 
 #define APP (AppDelegate*)[[UIApplication sharedApplication] delegate]
 
+static const int CONTENT_QUESTION =  1;
+static const int CONTENT_TEXT =  2;
+
+static const int LESSON_ONE = 1;

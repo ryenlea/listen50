@@ -21,11 +21,15 @@
     
     MasterViewController* masterCtr = [[MasterViewController alloc] init];
     DetailViewController* detailCtr = [[DetailViewController alloc] init];
+    //
     UINavigationController* masterNavCtr = [[UINavigationController alloc] initWithRootViewController:masterCtr];
     UINavigationController* detailNavCtr = [[UINavigationController alloc] initWithRootViewController:detailCtr];
     
     self.window.rootViewController = splitViewController;
     masterCtr.detailCtr = detailCtr;
+    NSIndexPath* indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+    [masterCtr.tableView selectRowAtIndexPath: indexPath animated:NO scrollPosition:UITableViewScrollPositionTop];
+    [masterCtr displayLesson:LESSON_ONE];
     
     self.splitCtr = splitViewController;
     self.splitCtr.delegate = detailCtr;

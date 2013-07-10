@@ -12,7 +12,8 @@
 
 @property (nonatomic,strong) UIWebView* webView;
 @property (nonatomic,strong) UINavigationController* navCtr;
--(void) displayQuestionPage: (NSInteger) lessonNo;
--(void) displayAnswerPage: (NSInteger) lessonNo;
+@property (nonatomic) NSInteger contentType;
+
+-(void) displayContent: (NSInteger) lessonNo withPageType:(NSInteger) contentType;
 
 @end

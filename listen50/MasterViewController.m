@@ -26,7 +26,7 @@
     if(self){
         self.navigationItem.title = @"目录";
     }
-    NSString* filepath = [[NSBundle mainBundle] pathForResource:@"lessons" ofType:@"plist"];
+    NSString* filepath = [[NSBundle mainBundle] pathForResource:@"lessons" ofType:@"plist" inDirectory:@"data"];
     lessons = [[NSArray alloc] initWithContentsOfFile:filepath];
     return self;
 }
@@ -72,6 +72,7 @@
     [detailCtr displayContent:lessonId withPageType:CONTENT_QUESTION];
     NSString* str = lessons[lessonId-1][@"title"];
     detailCtr.navigationItem.title  = str;
+    //
 }
 
 #pragma mark datasource
@@ -101,6 +102,12 @@
     bgColorView.backgroundColor = [[UIColor alloc] initWithRed:180.0 green:59.0 blue:46.0 alpha:1.0];
     cell.selectedBackgroundView= bgColorView;
     cell.lessonTitle.text = lessons[indexPath.row][@"title"];
+    cell.lessonNo.text = [NSString stringWithFormat:@"%d", indexPath.row+1 ];
+    //if (TRUE){//indexPath.row == 0 && indexPath.section == 0){
+    //    cell.highlighted = YES;
+    //}else {
+    //    cell.highlighted = NO;
+    //}
     /*
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL];
     if(cell == NULL){

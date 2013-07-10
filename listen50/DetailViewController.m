@@ -9,7 +9,9 @@
 #import "DetailViewController.h"
 #import "UISegmentedControl+NUI.h"
 
-@interface DetailViewController ()
+@interface DetailViewController (){
+    UISegmentedControl* sc;
+}
 @property (strong,nonatomic) UIPopoverController* masterPopoverCtr;
 @end
 
@@ -31,7 +33,7 @@
 {
     UINavigationController* nav = self.navigationController;
     nav.toolbarHidden = NO;
-    UISegmentedControl* sc = [[UISegmentedControl alloc] initWithItems:@[@"题 目",@"原 文"]];
+    sc = [[UISegmentedControl alloc] initWithItems:@[@"题 目",@"原 文"]];
     sc.frame = CGRectMake(0, 0, 200, 30);
     [sc setWidth:100.0 forSegmentAtIndex:0];
     [sc setWidth:100.0 forSegmentAtIndex:1];
@@ -61,6 +63,9 @@
 - (void) displayContent:(NSInteger)lessonNo withPageType:(NSInteger)conType
 {
     contentType = conType;
+    //
+    sc.selectedSegmentIndex = CONTENT_QUESTION == contentType? 0 :1;
+    //
     NSString* fileName =  [NSString stringWithFormat: CONTENT_QUESTION == contentType ? @"%dq" : @"%da",lessonNo];
     NSString* htmlPath = [[NSBundle mainBundle] pathForResource: fileName ofType:@"html" inDirectory:@"assets/htmls"];
     NSURL* htmlUrl = [NSURL fileURLWithPath:htmlPath];

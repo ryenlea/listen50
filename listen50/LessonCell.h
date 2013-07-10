@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LessonCell : UITableViewCell
+@property (strong,nonatomic) IBOutlet UILabel* lessonNo;
 @property (strong,nonatomic) IBOutlet UILabel* lessonTitle;
 @end

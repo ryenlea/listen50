@@ -154,5 +154,10 @@ SettingsTableCell {
     background-color: #F7F7F7;
     font-color: @primaryFontColor;
     font-name: @primaryFontNameBold;
-    font-size: 17;
+    font-size: 30;
+}
+SettingsTableCellDetail {
+    font-name: @primaryFontName;
+    font-size: 30;
+    font-color: @secondaryFontColor;
 }

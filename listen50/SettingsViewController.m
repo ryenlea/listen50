@@ -40,7 +40,7 @@
             cell.selectedBackgroundView= bgColorView;
             cell.accessoryType = UITableViewCellAccessoryNone;
 		} whenSelected:^(NSIndexPath *indexPath) {
-			//TODO
+			
 		}];
     }];
     

@@ -13,7 +13,7 @@ DEPENDENCIES:
   - Underscore.m (~> 0.2.0)
 
 SPEC CHECKSUMS:
-  JMStaticContentTableViewController: 78a7919f9e6ce2f7d24e66e7a0d614713050a25e
+  JMStaticContentTableViewController: ec2ae8be90eafabe63e75e49160a2b828ae28731
   LTUpdate: ee58a30f73e6dcbc47ce1e5c617b024212a2dd98
   NoticeView: 16bb529beb669dd8f27f1dc9c63b8d006cf89ad1
   NUI: 030801aedc2fcd321efe50db8d44a36379955e7a

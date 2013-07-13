@@ -22,30 +22,7 @@ BarButton {
     font-size: 15;
     text-shadow-color: clear;
 }
-Button {
-    background-color: #B43B2E;
-    font-color: #FFFFFF;
-    font-color-highlighted: #CCCCCC;
-    font-name: @primaryFontNameBold;
-    font-size: 17;
-    height: 37;
-    corner-radius: 18;
-    padding: 12;
-}
-LargeButton {
-    background-color: #B43B2E;
-    height: 50;
-    font-size: 24;
-    corner-radius: 25;
-    padding: 19;
-}
-SmallButton {
-    background-color: #49C100;
-    height: 24;
-    font-size: 12;
-    corner-radius: 12;
-    padding: 8;
-}
+
 Label {
     font-name: @primaryFontName;
     font-size: 18;

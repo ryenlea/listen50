@@ -10,6 +10,7 @@
 		3C1768C2178962FF0095E909 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1768C1178962FF0095E909 /* SettingsViewController.m */; };
 		3C3C26D1178D22A0002BEBB8 /* LessonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3C26CF178D22A0002BEBB8 /* LessonCell.m */; };
 		3C3C26D2178D22A0002BEBB8 /* LessonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3C26D0178D22A0002BEBB8 /* LessonCell.xib */; };
+		3C3C862D178EAF1B000E19B4 /* main.nss in Resources */ = {isa = PBXBuildFile; fileRef = 3C3C862C178EAF1B000E19B4 /* main.nss */; };
 		3C447EBC178D46AB0084B683 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 3C447EBB178D46AB0084B683 /* data */; };
 		3C447EBE178D48220084B683 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 3C447EBD178D48220084B683 /* assets */; };
 		3C8D8F531785B00C005CC366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8D8F521785B00C005CC366 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 		3C3C26CE178D22A0002BEBB8 /* LessonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCell.h; sourceTree = "<group>"; };
 		3C3C26CF178D22A0002BEBB8 /* LessonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCell.m; sourceTree = "<group>"; };
 		3C3C26D0178D22A0002BEBB8 /* LessonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LessonCell.xib; sourceTree = "<group>"; };
+		3C3C862C178EAF1B000E19B4 /* main.nss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nss; sourceTree = "<group>"; };
 		3C447EBB178D46AB0084B683 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = listen50/data; sourceTree = "<group>"; };
 		3C447EBD178D48220084B683 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = listen50/assets; sourceTree = "<group>"; };
 		3C8D8F4F1785B00C005CC366 /* listen50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listen50.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 		3C8D8F591785B00C005CC366 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C3C862C178EAF1B000E19B4 /* main.nss */,
 				3C8D8F5A1785B00C005CC366 /* listen50-Info.plist */,
 				3C8D8F5B1785B00C005CC366 /* InfoPlist.strings */,
 				3C8D8F5E1785B00C005CC366 /* main.m */,
@@ -234,6 +237,7 @@
 				3C3C26D2178D22A0002BEBB8 /* LessonCell.xib in Resources */,
 				3C447EBC178D46AB0084B683 /* data in Resources */,
 				3C447EBE178D48220084B683 /* assets in Resources */,
+				3C3C862D178EAF1B000E19B4 /* main.nss in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
